@@ -86,11 +86,10 @@ NS_ASSUME_NONNULL_BEGIN
 			return;
 		}
 
-		[NSApp beginSheet:self.fingerprintManagerWindow
-		   modalForWindow:hostWindow
-			modalDelegate:self
-		   didEndSelector:@selector(_fingerprintManagerWindowDidEndSheet:returnCode:contextInfo:)
-			  contextInfo:NULL];
+		[hostWindow beginSheet:self.fingerprintManagerWindow
+			 completionHandler:^(NSModalResponse returnCode) {
+			[self _fingerprintManagerWindowDidEndSheet];
+		}];
 
 		return;
 	}
@@ -99,10 +98,8 @@ NS_ASSUME_NONNULL_BEGIN
 	[self.fingerprintManagerWindow makeKeyAndOrderFront:nil];
 }
 
-- (void)_fingerprintManagerWindowDidEndSheet:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo
+- (void)_fingerprintManagerWindowDidEndSheet
 {
-	[sheet close];
-
 	[self _closeStepTwo];
 }
 
@@ -112,8 +109,10 @@ NS_ASSUME_NONNULL_BEGIN
 		return;
 	}
 
-	if (self.fingerprintManagerWindow.sheet) {
-		[NSApp endSheet:self.fingerprintManagerWindow];
+	NSWindow *hostWindow = self.fingerprintManagerWindow.sheetParent;
+
+	if ( hostWindow) {
+		[hostWindow endSheet:self.fingerprintManagerWindow];
 
 		return;
 	}

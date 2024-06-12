@@ -448,18 +448,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 	self.authenticationProgressProgressIndicator.doubleValue = 0.0;
 
-	[NSApp beginSheet:self.authenticationProgressWindow
-	   modalForWindow:self.authenticationHostWindow
-		modalDelegate:self
-	   didEndSelector:@selector(_authenticationProgressWindowSheetDidEnd:returnCode:contextInfo:)
-		  contextInfo:NULL];
+	[self.authenticationHostWindow beginSheet:self.authenticationProgressWindow
+							completionHandler:^(NSModalResponse returnCode) {
+		[self _authenticationProgressWindowSheetDidEnd];
+	}];
 
 	self.lastEvent = OTRKitSMPEventInProgress;
 }
 
-- (void)_authenticationProgressWindowSheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo
+- (void)_authenticationProgressWindowSheetDidEnd
 {
-	[sheet close];
+	;
 }
 
 - (void)_updateProgressIndicatorStatusMessage:(NSString *)statusMessage
@@ -534,7 +533,7 @@ NS_ASSUME_NONNULL_BEGIN
 {
 	/* Close the current progress window if open. */
 	if ([self _progressIndicatorWindowIsVisible]) {
-		[NSApp endSheet:self.authenticationProgressWindow];
+		[self.authenticationHostWindow endSheet:self.authenticationProgressWindow];
 	}
 }
 

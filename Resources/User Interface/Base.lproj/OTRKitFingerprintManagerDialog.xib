@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23077.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17503.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23077.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,16 +18,16 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Off-the-Record Messaging: List of Fingerprints" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="crw-au-ikh">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="283" y="305" width="700" height="324"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <rect key="contentRect" x="283" y="305" width="720" height="324"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <value key="minSize" type="size" width="550" height="324"/>
             <value key="maxSize" type="size" width="1024" height="720"/>
-            <view key="contentView" misplaced="YES" id="nNo-Cz-nE6">
-                <rect key="frame" x="0.0" y="0.0" width="697" height="324"/>
+            <view key="contentView" id="nNo-Cz-nE6">
+                <rect key="frame" x="0.0" y="0.0" width="693" height="324"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C9U-G7-aie">
-                        <rect key="frame" x="610" y="3" width="70" height="32"/>
+                        <rect key="frame" x="611" y="3" width="69" height="32"/>
                         <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fZR-pm-FE4">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -37,7 +37,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qbO-1o-g7c">
-                        <rect key="frame" x="13" y="3" width="154" height="32"/>
+                        <rect key="frame" x="13" y="3" width="153" height="32"/>
                         <buttonCell key="cell" type="push" title="Remove Fingerprint" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9bi-zw-6D3">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -47,7 +47,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-Wc-hUQ">
-                        <rect key="frame" x="165" y="3" width="142" height="32"/>
+                        <rect key="frame" x="164" y="3" width="141" height="32"/>
                         <buttonCell key="cell" type="push" title="End Conversation" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8j4-w9-WVb">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -59,11 +59,11 @@
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY1-po-8KZ">
                         <rect key="frame" x="0.0" y="41" width="693" height="283"/>
                         <clipView key="contentView" drawsBackground="NO" id="XBK-f5-yar">
-                            <rect key="frame" x="1" y="1" width="691" height="281"/>
+                            <rect key="frame" x="1" y="1" width="691" height="266"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="B0w-cW-eY0" viewBased="YES" id="Dvk-3g-BdG">
-                                    <rect key="frame" x="0.0" y="0.0" width="691" height="258"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="692" height="243"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -85,7 +85,7 @@
                                                     <rect key="frame" x="1" y="1" width="113" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ATn-5h-kRB">
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ATn-5h-kRB">
                                                             <rect key="frame" x="0.0" y="1" width="113" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" id="sac-YJ-VkE">
                                                                 <font key="font" metaFont="system"/>
@@ -121,7 +121,7 @@
                                                     <rect key="frame" x="117" y="1" width="110" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gKo-Qu-hj0">
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gKo-Qu-hj0">
                                                             <rect key="frame" x="0.0" y="1" width="110" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" id="I31-b6-NH0">
                                                                 <font key="font" metaFont="system"/>
@@ -141,7 +141,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="fingerprint" width="348" minWidth="10" maxWidth="3.4028234663852886e+38" id="HMX-HT-YHL">
+                                        <tableColumn identifier="fingerprint" width="336" minWidth="10" maxWidth="3.4028234663852886e+38" id="HMX-HT-YHL">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Fingerprint">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -154,11 +154,11 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="fingerprint" id="VWP-gA-RV7" customClass="OTRKitFingerprintManagerDialogTableCellView">
-                                                    <rect key="frame" x="230" y="1" width="348" height="17"/>
+                                                    <rect key="frame" x="230" y="1" width="336" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gc1-ro-zxQ">
-                                                            <rect key="frame" x="0.0" y="1" width="348" height="16"/>
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gc1-ro-zxQ">
+                                                            <rect key="frame" x="0.0" y="1" width="336" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" id="y4E-jK-uhB">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -178,7 +178,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="status" width="61.20745849609375" minWidth="10" maxWidth="3.4028234663852886e+38" id="oTG-aB-GZC">
+                                        <tableColumn identifier="status" width="61" minWidth="10" maxWidth="3.4028234663852886e+38" id="oTG-aB-GZC">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -191,10 +191,10 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="status" id="IKw-UA-XzY" customClass="OTRKitFingerprintManagerDialogTableCellView">
-                                                    <rect key="frame" x="581" y="1" width="61" height="17"/>
+                                                    <rect key="frame" x="569" y="1" width="61" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jZR-gY-VIC">
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jZR-gY-VIC">
                                                             <rect key="frame" x="0.0" y="1" width="61" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Unused" id="oL1-Fz-BAw">
                                                                 <font key="font" metaFont="system"/>
@@ -214,7 +214,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="trusted" width="40" minWidth="10" maxWidth="3.4028234663852886e+38" id="DJ2-il-pPk">
+                                        <tableColumn identifier="trusted" width="52.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="DJ2-il-pPk">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Trusted">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -227,11 +227,11 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="trusted" id="AUY-xa-lH0" customClass="OTRKitFingerprintManagerDialogTableCellView">
-                                                    <rect key="frame" x="645" y="1" width="44" height="17"/>
+                                                    <rect key="frame" x="633" y="1" width="56" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="z65-00-FtE">
-                                                            <rect key="frame" x="13" y="0.0" width="18" height="18"/>
+                                                            <rect key="frame" x="19" y="0.0" width="18" height="18"/>
                                                             <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="JWz-8v-wTt">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
@@ -260,8 +260,8 @@
                             </subviews>
                             <nil key="backgroundColor"/>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="9Ob-XB-T8C">
-                            <rect key="frame" x="1" y="266" width="691" height="16"/>
+                        <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="9Ob-XB-T8C">
+                            <rect key="frame" x="1" y="267" width="691" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="PMn-kP-TVk">
@@ -269,7 +269,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" wantsLayer="YES" id="B0w-cW-eY0">
-                            <rect key="frame" x="0.0" y="0.0" width="691" height="23"/>
+                            <rect key="frame" x="0.0" y="0.0" width="692" height="23"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
@@ -283,6 +283,7 @@
                     <constraint firstAttribute="bottom" secondItem="C9U-G7-aie" secondAttribute="bottom" constant="10" id="W5m-p6-DC9"/>
                     <constraint firstItem="Mgt-Wc-hUQ" firstAttribute="baseline" secondItem="C9U-G7-aie" secondAttribute="baseline" id="YCF-2R-XBL"/>
                     <constraint firstItem="qbO-1o-g7c" firstAttribute="leading" secondItem="nNo-Cz-nE6" secondAttribute="leading" constant="20" id="alf-Nx-ybe"/>
+                    <constraint firstItem="C9U-G7-aie" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mgt-Wc-hUQ" secondAttribute="trailing" constant="12" symbolic="YES" id="auL-bw-lPL"/>
                     <constraint firstItem="Mgt-Wc-hUQ" firstAttribute="baseline" secondItem="qbO-1o-g7c" secondAttribute="baseline" id="jYv-pZ-Bwj"/>
                     <constraint firstItem="BY1-po-8KZ" firstAttribute="top" secondItem="nNo-Cz-nE6" secondAttribute="top" id="unJ-mK-bnJ"/>
                 </constraints>

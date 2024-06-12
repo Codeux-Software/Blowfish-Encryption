@@ -739,7 +739,7 @@ static OtrlMessageAppOps ui_ops = {
 }
 
 #pragma mark -
-#pragma mark Enocoding/Decoding
+#pragma mark Encoding/Decoding
 
 - (void)decodeMessage:(NSString *)message
 			 username:(NSString *)username
@@ -876,12 +876,12 @@ static OtrlMessageAppOps ui_ops = {
 		ConnContext *otrContext = [self _contextForUsername:username accountName:accountName protocol:protocol];
 
 		/*
-		 * If our policy is not oppritunistic (automatic) and we are not in an encrypted,
-		 * then return unecnrypted message to delegate. This exception is made because when
-		 * OTRL_POLICY_MANUAL is set, OTR discards outgoing messages altogther.
+		 * If our policy is not opportunistic (automatic) and we are not in an encrypted,
+		 * then return unencrypted message to delegate. This exception is made because when
+		 * OTRL_POLICY_MANUAL is set, OTR discards outgoing messages altogether.
 		 *
-		 * If our policy is ppritunistic (automatic) and our OTR request was rejected,
-		 * then we will return unecnrypted message to delegate. OTR will refuse to do further
+		 * If our policy is opportunistic (automatic) and our OTR request was rejected,
+		 * then we will return unencrypted message to delegate. OTR will refuse to do further
 		 * work when the state is rejected.
 		 */
 		if (/* 1 */ (self.otrPolicy == OTRKitPolicyManual ||

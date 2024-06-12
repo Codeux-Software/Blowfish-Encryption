@@ -206,7 +206,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 	/* Many text fields contain a formatting character (%@) in the interface. This
 	 takes that text field value and formats it using the given username. Easier 
-	 doing it this way than maining a strings file. */
+	 doing it this way than maintaining a strings file. */
 	NSString *currentTextFieldValue = textField.stringValue;
 
 	NSString *formattedStringValue = [NSString stringWithFormat:currentTextFieldValue, username];
@@ -540,7 +540,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (IBAction)_authenticationProgressCancel:(id)sender
 {
-	/* Close negotation if it is open. */
+	/* Close negotiation if it is open. */
 	[self _maybeAbortOpenNegotiations];
 
 	/* There is no way to resend failed requests for incoming. */
@@ -554,7 +554,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (IBAction)_authenticationProgressOk:(id)sender
 {
 	/* If the last event was successful, then we can tear down the entire
-	 dialog, not just the pgoress indicator, because we are done here. */
+	 dialog, not just the progress indicator, because we are done here. */
 	if (self.lastEvent == OTRKitSMPEventSuccess) {
 		[self _teardownDialog]; // Will close progress window for us...
 

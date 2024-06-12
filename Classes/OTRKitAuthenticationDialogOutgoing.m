@@ -72,7 +72,7 @@ static NSMutableArray *_listOfOpenFingerprintConfirmationAlerts = nil;
         return; // Cancel operation...
     }
 
-    /* Start a negoation depending on which method was selected. */
+    /* Start a negotiation depending on which method was selected. */
     if (self.authenticationMethod == OTRKitSMPEventNone)
     {
         BOOL isVerified = (self.fingerprintIsVerifiedUserCheck.state == NSOnState);

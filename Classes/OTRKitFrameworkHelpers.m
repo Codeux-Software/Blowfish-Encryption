@@ -36,11 +36,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OTRKitAlertDialogContextObject : NSObject
-@property (nonatomic, strong, nullable) id contextInfo;
-@property (nonatomic, copy) OTRKitAlertDialogCompletionBlock completionBlock;
-@end
-
 @implementation OTRKitFrameworkHelpers
 
 + (NSString *)localizedString:(NSString *)original inTable:(NSString *)inTable, ...
@@ -100,7 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 	/* Construct alert */
 	NSAlert *errorAlert = [NSAlert new];
 
-	errorAlert.alertStyle = NSInformationalAlertStyle;
+	errorAlert.alertStyle = NSAlertStyleInformational;
 
 	errorAlert.messageText = messageText;
 	errorAlert.informativeText = informativeText;
@@ -110,66 +105,28 @@ NS_ASSUME_NONNULL_BEGIN
 	}
 
 	/* Attach the sheet to the highest window */
-	OTRKitAlertDialogContextObject *contextObject = nil;
-
-	if (contextInfo || completionBlock) {
-		contextObject = [OTRKitAlertDialogContextObject new];
-
-		contextObject.contextInfo = contextInfo;
-
-		contextObject.completionBlock = completionBlock;
-	}
-
 	if (hostWindow) {
 		hostWindow = [self _deepestSheetOfWindow:hostWindow];
 	}
 
 	if (hostWindow) {
-		void *contextObjectRef = NULL;
-
-		if (contextObject) {
-			contextObjectRef = (void *)CFBridgingRetain(contextObject);
-		}
-
 		[errorAlert beginSheetModalForWindow:hostWindow
-							   modalDelegate:[self class]
-							  didEndSelector:@selector(_alertDialogSheetDidEnd:returnCode:contextInfo:)
-								 contextInfo:contextObjectRef];
-	} else {
-		NSModalResponse returnCode = [errorAlert runModal];
+						   completionHandler:^(NSModalResponse returnCode) {
+			if (completionBlock) {
+				completionBlock(returnCode, contextInfo);
+			}
+		}];
 
-		if (contextObject) {
-			[self _alertDialogDidEnd:returnCode
-					   contextObject:contextObject];
-		}
+		return;
 	}
-}
 
-+ (void)_alertDialogSheetDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo
-{
-	if (contextInfo) {
-		OTRKitAlertDialogContextObject *contextObject = (OTRKitAlertDialogContextObject *)CFBridgingRelease(contextInfo);
-
-		[self _alertDialogDidEnd:returnCode contextObject:contextObject];
-	}
-}
-
-+ (void)_alertDialogDidEnd:(NSInteger)returnCode contextObject:(OTRKitAlertDialogContextObject *)contextObject
-{
-	id contextInfo = contextObject.contextInfo;
-
-	OTRKitAlertDialogCompletionBlock completionBlock = contextObject.completionBlock;
+	NSModalResponse returnCode = [errorAlert runModal];
 
 	if (completionBlock) {
 		completionBlock(returnCode, contextInfo);
 	}
 }
 
-@end
-
-#pragma mark -
-
-@implementation OTRKitAlertDialogContextObject
 @end
 
 NS_ASSUME_NONNULL_END

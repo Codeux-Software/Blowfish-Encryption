@@ -35,7 +35,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^OTRKitAlertDialogCompletionBlock)(NSInteger buttonClicked, id __nullable contextInfo);
+typedef void (^OTRKitAlertDialogCompletionBlock)(NSModalResponse buttonClicked, id __nullable contextInfo);
 
 @interface OTRKitFrameworkHelpers : NSObject
 + (void)presentAlertInWindow:(nullable NSWindow *)hostWindow

@@ -30,7 +30,7 @@
  *
  *********************************************************************** */
 
-#import "OTRKit.h"
+#import <EncryptionKit/OTRKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

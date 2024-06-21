@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 	LocalizedString(@"OTRKitAuthenticationDialog", (_key_), ##__VA_ARGS__)
 
 #pragma mark -
-#pragma makr Headers
+#pragma mark Headers
 
 @interface OTRKitAuthenticationDialog ()
 @property (nonatomic, copy) NSString *cachedUsername;

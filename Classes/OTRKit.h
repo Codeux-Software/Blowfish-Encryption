@@ -164,7 +164,7 @@ extern NSString * const OTRKitMessageStateDidChangeNotification;
  *  to the appropriate chat protocol manager to send the actual message.
  *
  *  @param otrKit		Reference to shared instance
- *  @param message		Message to be sent over the network. May contain ciphertext.
+ *  @param message		Message to be sent over the network. May contain cipher text.
  *  @param username		The account name of the remote user
  *  @param accountName	The account name of the local user
  *  @param protocol		The protocol of the exchange
@@ -183,7 +183,7 @@ extern NSString * const OTRKitMessageStateDidChangeNotification;
  *
  *  @param otrKit			Reference to shared instance
  *  @param encodedMessage   Plain text message
- *  @param wasEncrypted		Whether or not encodedMessage message is ciphertext, or just plaintext appended with the opportunistic whitespace. This is just a check of the encodedMessage message for a "?OTR" prefix.
+ *  @param wasEncrypted		Whether or not encodedMessage message is cipher text, or just plaintext appended with the opportunistic whitespace. This is just a check of the encodedMessage message for a "?OTR" prefix.
  *  @param username			The account name of the remote user
  *  @param accountName		The account name of the local user
  *  @param protocol			The protocol of the exchange

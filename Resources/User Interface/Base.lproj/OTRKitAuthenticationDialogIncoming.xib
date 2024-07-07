@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23077.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23077.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,19 +31,19 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <window title="Off-the-Record Messaging: Authenticate Chat Partner" allowsToolTipsWhenApplicationIsInactive="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="u9F-DW-xfz">
+        <window title="Off-the-Record Messaging: Authenticate Chat Partner" allowsToolTipsWhenApplicationIsInactive="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="u9F-DW-xfz">
             <windowStyleMask key="styleMask" titled="YES"/>
             <rect key="contentRect" x="283" y="305" width="415" height="381"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <view key="contentView" id="UXA-GQ-9Kf">
                 <rect key="frame" x="0.0" y="0.0" width="415" height="381"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="nul-iT-XfB" userLabel="Fingerprint View">
-                        <rect key="frame" x="0.0" y="61" width="415" height="216"/>
+                        <rect key="frame" x="0.0" y="60" width="415" height="219"/>
                     </customView>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJn-7s-TTk">
-                        <rect key="frame" x="18" y="295" width="379" height="34"/>
+                        <rect key="frame" x="18" y="297" width="379" height="32"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="%@ has requested that you authenticate yourself to prove that you are indeed who you claim to be." id="VIJ-Fn-A6O">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -51,19 +51,19 @@
                         </textFieldCell>
                     </textField>
                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="469-ev-1jO">
-                        <rect key="frame" x="18" y="274" width="380" height="5"/>
+                        <rect key="frame" x="18" y="276" width="380" height="5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="380" id="JCO-To-7O7"/>
                         </constraints>
                     </box>
                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Oc6-dm-sed">
-                        <rect key="frame" x="18" y="59" width="380" height="5"/>
+                        <rect key="frame" x="18" y="58" width="380" height="5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="380" id="ayE-4K-n6c"/>
                         </constraints>
                     </box>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6jF-Wm-92c">
-                        <rect key="frame" x="307" y="13" width="94" height="32"/>
+                        <rect key="frame" x="314" y="13" width="88" height="32"/>
                         <buttonCell key="cell" type="push" title="Respond" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Gx6-oe-dsi">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -76,7 +76,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZvQ-8e-Y0V">
-                        <rect key="frame" x="225" y="13" width="82" height="32"/>
+                        <rect key="frame" x="240" y="13" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XKX-5m-7Gx">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -89,10 +89,10 @@ Gw
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCu-5F-RtM">
-                        <rect key="frame" x="92" y="337" width="231" height="24"/>
+                        <rect key="frame" x="93" y="337" width="230" height="24"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Authentication Request" id="Ash-IT-Ya7">
                             <font key="font" metaFont="systemBold" size="20"/>
-                            <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -121,10 +121,10 @@ Gw
             <point key="canvasLocation" x="616" y="265"/>
         </window>
         <customView translatesAutoresizingMaskIntoConstraints="NO" id="55E-YG-Jbg" userLabel="Shared Secret View" customClass="OTRKitAutoExpandingTextField">
-            <rect key="frame" x="0.0" y="0.0" width="415" height="128"/>
+            <rect key="frame" x="0.0" y="0.0" width="415" height="126"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="r0y-1N-aNB">
-                    <rect key="frame" x="18" y="46" width="118" height="16"/>
+                    <rect key="frame" x="18" y="45" width="117" height="15"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="The shared secret:" id="T34-ro-sII">
                         <font key="font" metaFont="systemBold" size="12"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -132,7 +132,7 @@ Gw
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmj-3U-Mew">
-                    <rect key="frame" x="18" y="81" width="378" height="28"/>
+                    <rect key="frame" x="18" y="79" width="378" height="28"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="To authenticate, %@ has requested that you respond with a secret that was predetermined." id="h53-Nb-yJY">
                         <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -140,10 +140,10 @@ Gw
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="375" translatesAutoresizingMaskIntoConstraints="NO" id="XgO-9G-gkL" customClass="OTRKitAutoExpandingTextField">
-                    <rect key="frame" x="20" y="20" width="375" height="22"/>
+                    <rect key="frame" x="20" y="20" width="375" height="21"/>
                     <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="gKm-FX-n0a">
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
@@ -166,10 +166,10 @@ Gw
             <point key="canvasLocation" x="607.5" y="288"/>
         </customView>
         <customView translatesAutoresizingMaskIntoConstraints="NO" id="2uI-Wj-ugA" userLabel="Question &amp; Answer View">
-            <rect key="frame" x="0.0" y="0.0" width="415" height="172"/>
+            <rect key="frame" x="0.0" y="0.0" width="415" height="168"/>
             <subviews>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RN2-3h-6nK">
-                    <rect key="frame" x="17" y="125" width="381" height="28"/>
+                    <rect key="frame" x="17" y="121" width="381" height="28"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="To authenticate, %@ has requested that you answer the question that's presented below." id="578-4j-aAv">
                         <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -177,7 +177,7 @@ Gw
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GhQ-yf-T1m">
-                    <rect key="frame" x="16" y="93" width="63" height="16"/>
+                    <rect key="frame" x="16" y="90" width="63" height="15"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Question:" id="PW8-df-9T5">
                         <font key="font" metaFont="systemBold" size="12"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -185,10 +185,10 @@ Gw
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="375" translatesAutoresizingMaskIntoConstraints="NO" id="o2Y-80-kWB" customClass="OTRKitAutoExpandingTextField">
-                    <rect key="frame" x="18" y="20" width="378" height="22"/>
+                    <rect key="frame" x="18" y="20" width="378" height="21"/>
                     <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="B6n-WL-7vN">
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
@@ -196,7 +196,7 @@ Gw
                     </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bJ2-d1-pNi">
-                    <rect key="frame" x="16" y="47" width="153" height="16"/>
+                    <rect key="frame" x="16" y="46" width="153" height="15"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Answer (case sensitive):" id="7ul-99-cDt">
                         <font key="font" metaFont="systemBold" size="12"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -204,7 +204,7 @@ Gw
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DfG-u6-czE">
-                    <rect key="frame" x="33" y="71" width="364" height="17"/>
+                    <rect key="frame" x="33" y="69" width="364" height="16"/>
                     <textFieldCell key="cell" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" state="on" title="123" id="q1r-lC-AwV">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -234,11 +234,11 @@ Gw
             </constraints>
             <point key="canvasLocation" x="617" y="442.5"/>
         </customView>
-        <window title="Progress Information" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="BDY-mb-dVK">
+        <window title="Progress Information" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="BDY-mb-dVK">
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="283" y="305" width="350" height="166"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <value key="maxSize" type="size" width="400" height="166"/>
             <value key="maxFullScreenContentSize" type="size" width="400" height="166"/>
             <view key="contentView" id="Bxq-Qt-7kb">
@@ -246,10 +246,10 @@ Gw
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="AGS-8u-3Wh">
-                        <rect key="frame" x="20" y="102" width="311" height="20"/>
+                        <rect key="frame" x="20" y="100" width="311" height="23"/>
                     </progressIndicator>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nX1-K1-gUP">
-                        <rect key="frame" x="18" y="129" width="159" height="17"/>
+                        <rect key="frame" x="18" y="130" width="160" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Authenticating with %@" id="p8R-rI-ce6">
                             <font key="font" metaFont="systemBold"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -257,7 +257,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Exj-3q-muU">
-                        <rect key="frame" x="18" y="80" width="140" height="17"/>
+                        <rect key="frame" x="18" y="79" width="140" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Waiting for response…" id="f7h-6l-FRv">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -265,10 +265,10 @@ Gw
                         </textFieldCell>
                     </textField>
                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="dhx-Qx-8mj">
-                        <rect key="frame" x="30" y="59" width="290" height="5"/>
+                        <rect key="frame" x="30" y="58" width="290" height="5"/>
                     </box>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wv3-hV-pMb">
-                        <rect key="frame" x="277" y="13" width="59" height="32"/>
+                        <rect key="frame" x="284" y="13" width="53" height="32"/>
                         <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rRX-M1-xAB">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -281,7 +281,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bWr-hU-EBt">
-                        <rect key="frame" x="195" y="13" width="82" height="32"/>
+                        <rect key="frame" x="210" y="13" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5BA-BG-TEe">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>

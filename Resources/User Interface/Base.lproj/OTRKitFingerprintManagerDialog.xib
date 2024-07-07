@@ -18,16 +18,16 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Off-the-Record Messaging: List of Fingerprints" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="crw-au-ikh">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="283" y="305" width="720" height="324"/>
+            <rect key="contentRect" x="283" y="305" width="700" height="322"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
-            <value key="minSize" type="size" width="550" height="324"/>
+            <value key="minSize" type="size" width="550" height="322"/>
             <value key="maxSize" type="size" width="1024" height="720"/>
             <view key="contentView" id="nNo-Cz-nE6">
-                <rect key="frame" x="0.0" y="0.0" width="693" height="324"/>
+                <rect key="frame" x="0.0" y="0.0" width="700" height="322"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C9U-G7-aie">
-                        <rect key="frame" x="611" y="3" width="69" height="32"/>
+                        <rect key="frame" x="618" y="8" width="69" height="32"/>
                         <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fZR-pm-FE4">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -37,7 +37,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qbO-1o-g7c">
-                        <rect key="frame" x="13" y="3" width="153" height="32"/>
+                        <rect key="frame" x="13" y="8" width="153" height="32"/>
                         <buttonCell key="cell" type="push" title="Remove Fingerprint" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9bi-zw-6D3">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -47,7 +47,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-Wc-hUQ">
-                        <rect key="frame" x="164" y="3" width="141" height="32"/>
+                        <rect key="frame" x="164" y="8" width="141" height="32"/>
                         <buttonCell key="cell" type="push" title="End Conversation" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8j4-w9-WVb">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -57,19 +57,19 @@
                         </connections>
                     </button>
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY1-po-8KZ">
-                        <rect key="frame" x="0.0" y="41" width="693" height="283"/>
+                        <rect key="frame" x="0.0" y="50" width="700" height="272"/>
                         <clipView key="contentView" drawsBackground="NO" id="XBK-f5-yar">
-                            <rect key="frame" x="1" y="1" width="691" height="266"/>
+                            <rect key="frame" x="1" y="1" width="698" height="270"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="B0w-cW-eY0" viewBased="YES" id="Dvk-3g-BdG">
-                                    <rect key="frame" x="0.0" y="0.0" width="692" height="243"/>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="B0w-cW-eY0" viewBased="YES" id="Dvk-3g-BdG">
+                                    <rect key="frame" x="0.0" y="0.0" width="698" height="247"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn identifier="accountName" width="108" minWidth="40" maxWidth="1000" id="bRE-Ja-tXE">
+                                        <tableColumn identifier="accountName" width="110" minWidth="60" maxWidth="1000" id="bRE-Ja-tXE">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Account">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -82,11 +82,12 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="accountName" id="0f1-Us-s4p" customClass="OTRKitFingerprintManagerDialogTableCellView">
-                                                    <rect key="frame" x="1" y="1" width="113" height="17"/>
+                                                    <rect key="frame" x="1" y="1" width="115" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ATn-5h-kRB">
-                                                            <rect key="frame" x="0.0" y="1" width="113" height="16"/>
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="ATn-5h-kRB">
+                                                            <rect key="frame" x="0.0" y="1" width="108" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" id="sac-YJ-VkE">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -94,18 +95,13 @@
                                                             </textFieldCell>
                                                         </textField>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="ATn-5h-kRB" secondAttribute="trailing" constant="2" id="Kw0-ad-lt7"/>
-                                                        <constraint firstItem="ATn-5h-kRB" firstAttribute="leading" secondItem="0f1-Us-s4p" secondAttribute="leading" constant="2" id="l7i-j0-NL8"/>
-                                                        <constraint firstItem="ATn-5h-kRB" firstAttribute="top" secondItem="0f1-Us-s4p" secondAttribute="top" id="lrE-ei-YtZ"/>
-                                                    </constraints>
                                                     <connections>
                                                         <outlet property="textField" destination="ATn-5h-kRB" id="BfB-2K-HbZ"/>
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="username" width="110" minWidth="40" maxWidth="1000" id="rZ0-Uc-oIb">
+                                        <tableColumn identifier="username" width="110" minWidth="60" maxWidth="1000" id="rZ0-Uc-oIb">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Chat Partner">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -118,11 +114,12 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="username" id="qV7-cS-YKx" customClass="OTRKitFingerprintManagerDialogTableCellView">
-                                                    <rect key="frame" x="117" y="1" width="110" height="17"/>
+                                                    <rect key="frame" x="119" y="1" width="110" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gKo-Qu-hj0">
-                                                            <rect key="frame" x="0.0" y="1" width="110" height="16"/>
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="gKo-Qu-hj0">
+                                                            <rect key="frame" x="0.0" y="1" width="108" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" id="I31-b6-NH0">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -130,18 +127,13 @@
                                                             </textFieldCell>
                                                         </textField>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="gKo-Qu-hj0" secondAttribute="trailing" constant="2" id="0We-ce-HmG"/>
-                                                        <constraint firstItem="gKo-Qu-hj0" firstAttribute="leading" secondItem="qV7-cS-YKx" secondAttribute="leading" constant="2" id="GrU-vX-FdZ"/>
-                                                        <constraint firstItem="gKo-Qu-hj0" firstAttribute="top" secondItem="qV7-cS-YKx" secondAttribute="top" id="u0s-wq-wQl"/>
-                                                    </constraints>
                                                     <connections>
                                                         <outlet property="textField" destination="gKo-Qu-hj0" id="Pb5-Vd-6N9"/>
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="fingerprint" width="336" minWidth="10" maxWidth="3.4028234663852886e+38" id="HMX-HT-YHL">
+                                        <tableColumn identifier="fingerprint" width="335" minWidth="250" maxWidth="3.4028234663852886e+38" id="HMX-HT-YHL">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Fingerprint">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -154,11 +146,12 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="fingerprint" id="VWP-gA-RV7" customClass="OTRKitFingerprintManagerDialogTableCellView">
-                                                    <rect key="frame" x="230" y="1" width="336" height="17"/>
+                                                    <rect key="frame" x="232" y="1" width="335" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gc1-ro-zxQ">
-                                                            <rect key="frame" x="0.0" y="1" width="336" height="16"/>
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="gc1-ro-zxQ">
+                                                            <rect key="frame" x="0.0" y="1" width="333" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" id="y4E-jK-uhB">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -166,19 +159,13 @@
                                                             </textFieldCell>
                                                         </textField>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="gc1-ro-zxQ" firstAttribute="leading" secondItem="VWP-gA-RV7" secondAttribute="leading" constant="2" id="ABJ-iI-nXb"/>
-                                                        <constraint firstItem="gc1-ro-zxQ" firstAttribute="top" secondItem="VWP-gA-RV7" secondAttribute="top" id="GSh-FR-xHs"/>
-                                                        <constraint firstAttribute="trailing" secondItem="gc1-ro-zxQ" secondAttribute="trailing" constant="2" id="WZA-JC-di8"/>
-                                                        <constraint firstItem="gc1-ro-zxQ" firstAttribute="top" secondItem="VWP-gA-RV7" secondAttribute="top" id="sRh-IL-Svs"/>
-                                                    </constraints>
                                                     <connections>
                                                         <outlet property="textField" destination="gc1-ro-zxQ" id="5kS-dc-cGY"/>
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="status" width="61" minWidth="10" maxWidth="3.4028234663852886e+38" id="oTG-aB-GZC">
+                                        <tableColumn identifier="status" width="65" minWidth="65" maxWidth="3.4028234663852886e+38" id="oTG-aB-GZC">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -191,11 +178,12 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="status" id="IKw-UA-XzY" customClass="OTRKitFingerprintManagerDialogTableCellView">
-                                                    <rect key="frame" x="569" y="1" width="61" height="17"/>
+                                                    <rect key="frame" x="570" y="1" width="65" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jZR-gY-VIC">
-                                                            <rect key="frame" x="0.0" y="1" width="61" height="16"/>
+                                                        <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="jZR-gY-VIC">
+                                                            <rect key="frame" x="0.0" y="1" width="63" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Unused" id="oL1-Fz-BAw">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -203,18 +191,13 @@
                                                             </textFieldCell>
                                                         </textField>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="jZR-gY-VIC" firstAttribute="leading" secondItem="IKw-UA-XzY" secondAttribute="leading" constant="2" id="3BV-GN-0PX"/>
-                                                        <constraint firstItem="jZR-gY-VIC" firstAttribute="top" secondItem="IKw-UA-XzY" secondAttribute="top" id="sOx-oJ-vq5"/>
-                                                        <constraint firstAttribute="trailing" secondItem="jZR-gY-VIC" secondAttribute="trailing" constant="2" id="tGn-uO-UhL"/>
-                                                    </constraints>
                                                     <connections>
                                                         <outlet property="textField" destination="jZR-gY-VIC" id="6Ht-tT-g1b"/>
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="trusted" width="52.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="DJ2-il-pPk">
+                                        <tableColumn identifier="trusted" width="54" minWidth="50" maxWidth="3.4028234663852886e+38" id="DJ2-il-pPk">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Trusted">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -227,11 +210,12 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="trusted" id="AUY-xa-lH0" customClass="OTRKitFingerprintManagerDialogTableCellView">
-                                                    <rect key="frame" x="633" y="1" width="56" height="17"/>
+                                                    <rect key="frame" x="638" y="1" width="58" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="z65-00-FtE">
-                                                            <rect key="frame" x="19" y="0.0" width="18" height="18"/>
+                                                        <button id="z65-00-FtE">
+                                                            <rect key="frame" x="20" y="0.0" width="18" height="18"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                             <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="JWz-8v-wTt">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
@@ -241,10 +225,6 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="z65-00-FtE" firstAttribute="top" secondItem="AUY-xa-lH0" secondAttribute="top" constant="1" id="j74-Sk-2pI"/>
-                                                        <constraint firstAttribute="centerX" secondItem="z65-00-FtE" secondAttribute="centerX" id="mkQ-LC-ah7"/>
-                                                    </constraints>
                                                     <connections>
                                                         <outlet property="viewCheckbox" destination="z65-00-FtE" id="q7L-ca-II8"/>
                                                     </connections>
@@ -260,8 +240,8 @@
                             </subviews>
                             <nil key="backgroundColor"/>
                         </clipView>
-                        <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="9Ob-XB-T8C">
-                            <rect key="frame" x="1" y="267" width="691" height="15"/>
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="9Ob-XB-T8C">
+                            <rect key="frame" x="1" y="267" width="622" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="PMn-kP-TVk">
@@ -269,7 +249,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" wantsLayer="YES" id="B0w-cW-eY0">
-                            <rect key="frame" x="0.0" y="0.0" width="692" height="23"/>
+                            <rect key="frame" x="0.0" y="0.0" width="698" height="23"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
@@ -278,9 +258,9 @@
                     <constraint firstAttribute="trailing" secondItem="BY1-po-8KZ" secondAttribute="trailing" id="3S8-39-jPo"/>
                     <constraint firstItem="BY1-po-8KZ" firstAttribute="leading" secondItem="nNo-Cz-nE6" secondAttribute="leading" id="4vC-AT-Qq6"/>
                     <constraint firstItem="Mgt-Wc-hUQ" firstAttribute="leading" secondItem="qbO-1o-g7c" secondAttribute="trailing" constant="12" id="IiC-Ct-peq"/>
-                    <constraint firstItem="C9U-G7-aie" firstAttribute="top" secondItem="BY1-po-8KZ" secondAttribute="bottom" constant="11" id="Ik4-MT-qu8"/>
+                    <constraint firstItem="C9U-G7-aie" firstAttribute="top" secondItem="BY1-po-8KZ" secondAttribute="bottom" constant="15" id="Ik4-MT-qu8"/>
                     <constraint firstAttribute="trailing" secondItem="C9U-G7-aie" secondAttribute="trailing" constant="20" id="SVv-CW-cNU"/>
-                    <constraint firstAttribute="bottom" secondItem="C9U-G7-aie" secondAttribute="bottom" constant="10" id="W5m-p6-DC9"/>
+                    <constraint firstAttribute="bottom" secondItem="C9U-G7-aie" secondAttribute="bottom" constant="15" id="W5m-p6-DC9"/>
                     <constraint firstItem="Mgt-Wc-hUQ" firstAttribute="baseline" secondItem="C9U-G7-aie" secondAttribute="baseline" id="YCF-2R-XBL"/>
                     <constraint firstItem="qbO-1o-g7c" firstAttribute="leading" secondItem="nNo-Cz-nE6" secondAttribute="leading" constant="20" id="alf-Nx-ybe"/>
                     <constraint firstItem="C9U-G7-aie" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mgt-Wc-hUQ" secondAttribute="trailing" constant="12" symbolic="YES" id="auL-bw-lPL"/>
